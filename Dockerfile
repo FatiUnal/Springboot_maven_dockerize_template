@@ -9,4 +9,5 @@ COPY . .
 RUN chmod +x mvnw && ./mvnw clean install -U
 
 #mavenin içindeki spring boot plugininin run komutunu bul ve çalıştır
+#enterpoint bu konteyner ayağa kalktığı zaman bunu çalıştır demek
 ENTRYPOINT ["./mvnw", "spring-boot:run"]
